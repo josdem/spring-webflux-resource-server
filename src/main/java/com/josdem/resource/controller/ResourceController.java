@@ -27,6 +27,6 @@ public class ResourceController {
 
   @PostMapping("/message")
   public Mono<String> createMessage(@RequestBody String message) {
-    return Mono.just(String.format("Message was created. Content: %s", message));
+    return Mono.just(String.format("Content: %s", message));
   }
 }
